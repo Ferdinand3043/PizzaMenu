@@ -56,9 +56,13 @@ while True:
         card = input('\nWhat is the card number?: ')
         date = input('\nWhat is the month/year?: ')
         security = input('\nWhat is the 3 digit code on the back?: ')
+        confirm = input('\n\tIs this information accurate? ')
+        if confirm == 'yes' or confirm == 'Yes' or confirm == 'YES':
+            break
+        else:
+            continue
     if details == 'yes' or details == 'Yes' or details == 'YES':
         break
-
 
 print("\nPlease fill out address details:")
 
