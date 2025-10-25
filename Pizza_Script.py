@@ -48,15 +48,15 @@ security = input('\nWhat is the 3 digit code on the back?: ')
 
 print("\nThank you for the information. So we have ->" + "\n\nCard Number: " + card + "\nDate: " + date + "\nSecurity Code: " + security)
 
-while True: #another infinite loop
-    details = input('\n\tIs this information accurate? ')
-    if details == 'No' or 'no' or 'NO':
+details = input('\n\tIs this information accurate? ')
+
+while True: 
+    if details == 'no' or details == 'No' or details == 'NO':
         print('\n\tPlease re-enter details!')
         card = input('\nWhat is the card number?: ')
         date = input('\nWhat is the month/year?: ')
         security = input('\nWhat is the 3 digit code on the back?: ')
-        continue
-    if details == 'Yes' or details == 'yes' or details == 'YES':
+    if details == 'yes' or details == 'Yes' or details == 'YES':
         break
 
 
